@@ -8,9 +8,8 @@ class BMICalculator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: '/',
+      home: InputPage(),
       routes: {
-        '/': (context) => InputPage(),
         '/results': (context) => ResultsPage(),
       },
       debugShowCheckedModeBanner: false,
@@ -18,7 +17,6 @@ class BMICalculator extends StatelessWidget {
         primaryColor: Color(0xFF0A0E21),
         scaffoldBackgroundColor: Color(0xFF0A0E21),
       ),
-      home: InputPage(),
     );
   }
 }
